@@ -18,10 +18,11 @@
 	rel="stylesheet"
 	/>
 	<!-- CSS -->
-	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./css/estilos.css">
 	<title>New Moon</title>
 </head>
 <body>
+	<!-- Barra de navegación -->
 	<header>
 		<!-- Navbar-->
 		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary"> -->
@@ -104,13 +105,13 @@
 							aria-labelledby="navbarDropdownMenuLink"
 						>
 							<li>
-								<a class="dropdown-item" href="#">Some news</a>
+								<a class="dropdown-item" href="#">Noticias</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Another news</a>
+								<a class="dropdown-item" href="#">Blog</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Something else here</a>
+								<a class="dropdown-item" href="#">Notificaciones</a>
 							</li>
 						</ul>
 					</div>
@@ -124,26 +125,27 @@
 							role="button"
 							aria-expanded="false"
 						>
-							<img
+							<!-- <img
 								src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
 								class="rounded-circle"
 								height="25"
 								alt="Black and White Portrait of a Man"
 								loading="lazy"
-							/>
+							/> -->
+							<i class="fa-solid fa-user rounded-circle" alt="Imagen de perfil"></i>
 						</a>
 						<ul
 							class="dropdown-menu dropdown-menu-end"
 							aria-labelledby="navbarDropdownMenuAvatar"
 						>
 							<li>
-								<a class="dropdown-item" href="#">My profile</a>
+								<a class="dropdown-item" href="#">Mi perfil</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Settings</a>
+								<a class="dropdown-item" href="#">Configuraciones</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Logout</a>
+								<a class="dropdown-item" href="#">Cerrar sesión</a>
 							</li>
 						</ul>
 					</div>
@@ -154,11 +156,140 @@
 		</nav>
 		<!-- Navbar -->
 	</header>
+	<!-- Galeria de imagenes -->
+	<div class="container galeria-imagenes">
+		<h1>Galería de Productos Destacados</h1>
+		<div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="detalles_paleta_sombras.html">
+						<img src="img/Sombras.jpg" class="d-block w-100" alt="Paletas de Sombras de Ojos">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="detalles_labiales.html">
+						<img src="img/Labiales.jpg" class="d-block w-100" alt="Labiales de larga duración">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="detalles_polvos_faciales.html">
+						<img src="img/Polvos.jpg" class="d-block w-100" alt="Polvos sueltos">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="detalles_rubores.html">
+						<img src="img/Rubores.jpg" class="d-block w-100" alt="Rubores">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="detalles_bases.html">
+						<img src="img/Bases.jpg" class="d-block w-100" alt="Bases">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="detalles_pestañina.html">
+						<img src="img/Pestañina.jpg" class="d-block w-100" alt="Pestañinas">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="detalles_sets_skincare.html">
+						<img src="img/Skincare1.jpg" class="d-block w-100" alt="Sets de Skincare">
+					</a>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="text-center text-white">
+		<!-- Grid container -->
+		<div class="container pt-4">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<!-- Facebook -->
+				<a
+					data-mdb-ripple-init
+					class="btn btn-link btn-floating btn-lg text-body m-1"
+					href="#!"
+					role="button"
+					data-mdb-ripple-color="dark"
+					><i class="fab fa-facebook-f"></i
+				></a>
+	
+				<!-- Twitter -->
+				<a
+					data-mdb-ripple-init
+					class="btn btn-link btn-floating btn-lg text-body m-1"
+					href="#!"
+					role="button"
+					data-mdb-ripple-color="dark"
+					><i class="fab fa-twitter"></i
+				></a>
+	
+				<!-- Google -->
+				<a
+					data-mdb-ripple-init
+					class="btn btn-link btn-floating btn-lg text-body m-1"
+					href="#!"
+					role="button"
+					data-mdb-ripple-color="dark"
+					><i class="fab fa-google"></i
+				></a>
+	
+				<!-- Instagram -->
+				<a
+					data-mdb-ripple-init
+					class="btn btn-link btn-floating btn-lg text-body m-1"
+					href="#!"
+					role="button"
+					data-mdb-ripple-color="dark"
+					><i class="fab fa-instagram"></i
+				></a>
+	
+				<!-- Linkedin -->
+				<a
+					data-mdb-ripple-init
+					class="btn btn-link btn-floating btn-lg text-body m-1"
+					href="#!"
+					role="button"
+					data-mdb-ripple-color="dark"
+					><i class="fab fa-linkedin"></i
+				></a>
+				<!-- Github -->
+				<a
+					data-mdb-ripple-init
+					class="btn btn-link btn-floating btn-lg text-body m-1"
+					href="#!"
+					role="button"
+					data-mdb-ripple-color="dark"
+					><i class="fab fa-github"></i
+				></a>
+			</section>
+			<!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+	
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+			© 2023 Copyright:
+			<a class="text-footer" href="https://mdbootstrap.com/">Juliana Coronell, Laura Barón, Alejandro Dueñas</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
 
 	<!-- MDB -->
 	<script
 	type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
 	></script>
+	<!-- Animación -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 </body>
 </html>

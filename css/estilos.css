@@ -1,0 +1,41 @@
+/* Estilos para la barra de navegación */
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar .container-fluid p{
+	margin: 0px 5px;
+	color: white;
+}
+
+header .navbar, footer {
+	background-color: #761240;
+}
+
+.nav-link, .fa-shopping-cart, .fa-bell, .fa-moon, footer .text-footer, .fa-facebook-f, .fa-twitter, .fa-google, .fa-instagram, .fa-linkedin, .fa-github, .navbar-toggler, .fa-user{
+	color: white;
+}
+
+
+/* Estilos para la galería */
+.galeria-imagenes {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden; 
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  }
+  
+.carousel-item img {
+  height: 390px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
