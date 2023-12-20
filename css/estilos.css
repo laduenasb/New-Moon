@@ -6,7 +6,8 @@ body {
   padding: 0px;
 }
 
-.navbar .container-fluid p{
+/* Se cambia el color del texto New-Moon en la barra de navegación a blanco*/
+.navbar .container-fluid p{ 
 	margin: 0px 5px;
 	color: white;
 }
@@ -16,7 +17,7 @@ header .navbar, footer {
 }
 
 .nav-link, .fa-shopping-cart, .fa-bell, .fa-moon, footer .text-footer, .fa-facebook-f, .fa-twitter, .fa-google, .fa-instagram, .fa-linkedin, .fa-github, .navbar-toggler, .fa-user{
-	color: white;
+	color: white; /* Se cambia el color de los iconos a blanco */
 }
 
 /* Información general */
@@ -28,16 +29,16 @@ header .navbar, footer {
 }
 
 .info-general {
-	/*flex: 1; /* Hace que los articulos se expandan para llenar el espacio en blanco */
-	margin: 20px; /* Agrega un margen alrededor de cada articulo */
-	text-align: left; /* Alinea el texto a la izquierda de cada articulo */
-	/*max-width: 100%; /* Hace que las imagenes ocupen todo el ancho de la pantalla*/
+	/*flex: 1; */
+	margin: 20px;
+	text-align: left;
+	/*max-width: 100%;*/
   max-width: 200px;
   min-width: 100px;
   max-height: 200px;
   min-height: 100px;
-	height: auto; /* Se ajusta automáticamente a la altura del navegador */
-	border-radius: 10px; /* Nos ayuda a redondear los bordes de las imagenes */
+	height: auto;
+	border-radius: 10px;
 }
 
 
