@@ -1,0 +1,12 @@
+.navbar .container-fluid p{
+	margin: 0px 5px;
+	color: white;
+}
+
+header .navbar {
+	background-color: green;
+}
+
+.nav-link, .fa-shopping-cart, .fa-bell, .fa-moon {
+	color: white;
+}

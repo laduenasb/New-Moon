@@ -25,176 +25,133 @@
 <body>
 	<header>
 		<!-- Navbar-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-			<div class="container-fluid justify-content-between">
-				<!-- Left elements -->
-				<div class="d-flex">
-					<!-- Brand -->
-					<a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
-						<img
+		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary"> -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<!-- Container wrapper -->
+			<div class="container-fluid">
+				<!-- Toggle button -->
+				<button
+					data-mdb-collapse-init
+					class="navbar-toggler"
+					type="button"
+					data-mdb-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
+
+				<!-- Collapsible wrapper -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- Navbar brand -->
+					<a class="navbar-brand mt-2 mt-lg-0" href="#">
+						<!-- <img
 							src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-							height="20"
+							height="15"
 							alt="MDB Logo"
 							loading="lazy"
-							style="margin-top: 2px;"
-						/>
+						/> -->
+						<i class="fa-solid fa-moon"></i>
+						<p>New Moon</p>
 					</a>
-
-					<!-- Search form -->
-					<form class="input-group w-auto my-auto d-none d-sm-flex">
-						<input
-							autocomplete="off"
-							type="search"
-							class="form-control rounded"
-							placeholder="Search"
-							style="min-width: 125px;"
-						/>
-						<span class="input-group-text border-0 d-none d-lg-flex"
-							><i class="fas fa-search"></i
-						></span>
-					</form>
+					<!-- Left links -->
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Explorar productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sobre nosotros</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="#">Projects</a>
+						</li> -->
+					</ul>
+					<!-- Left links -->
 				</div>
-				<!-- Left elements -->
-
-				<!-- Center elements -->
-				<ul class="navbar-nav flex-row d-none d-md-flex">
-					<li class="nav-item me-3 me-lg-1 active">
-						<a class="nav-link" href="#">
-							<span><i class="fas fa-home fa-lg"></i></span>
-							<span class="badge rounded-pill badge-notification bg-danger">1</span>
-						</a>
-					</li>
-
-					<li class="nav-item me-3 me-lg-1">
-						<a class="nav-link" href="#">
-							<span><i class="fas fa-flag fa-lg"></i></span>
-						</a>
-					</li>
-
-					<li class="nav-item me-3 me-lg-1">
-						<a class="nav-link" href="#">
-							<span><i class="fas fa-video fa-lg"></i></span>
-						</a>
-					</li>
-
-					<li class="nav-item me-3 me-lg-1">
-						<a class="nav-link" href="#">
-							<span><i class="fas fa-shopping-bag fa-lg"></i></span>
-						</a>
-					</li>
-
-					<li class="nav-item me-3 me-lg-1">
-						<a class="nav-link" href="#">
-							<span><i class="fas fa-users fa-lg"></i></span>
-							<span class="badge rounded-pill badge-notification bg-danger">2</span>
-						</a>
-					</li>
-				</ul>
-				<!-- Center elements -->
+				<!-- Collapsible wrapper -->
 
 				<!-- Right elements -->
-				<ul class="navbar-nav flex-row">
-					<li class="nav-item me-3 me-lg-1">
-						<a class="nav-link d-sm-flex align-items-sm-center" href="#">
+				<div class="d-flex align-items-center">
+					<!-- Search button -->
+					<div class="input-group">
+						<div class="form-outline" data-mdb-input-init>
+							<input type="search" id="form1" class="form-control" />
+							<label class="form-label text-white" for="form1">Buscar</label>
+						</div>
+						<button type="button" class="btn btn-primary" data-mdb-ripple-init>
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+					<!-- Icon -->
+					<a class="text-reset me-3" href="#">
+						<i class="fas fa-shopping-cart"></i>
+					</a>
+					<!-- Notifications -->
+					<div class="dropdown">
+						<a
+							data-mdb-dropdown-init
+							class="text-reset me-3 dropdown-toggle hidden-arrow"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							aria-expanded="false"
+						>
+							<i class="fas fa-bell"></i>
+							<span class="badge rounded-pill badge-notification bg-danger">1</span>
+						</a>
+						<ul
+							class="dropdown-menu dropdown-menu-end"
+							aria-labelledby="navbarDropdownMenuLink"
+						>
+							<li>
+								<a class="dropdown-item" href="#">Some news</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Another news</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Avatar -->
+					<div class="dropdown">
+						<a
+							data-mdb-dropdown-init
+							class="dropdown-toggle d-flex align-items-center hidden-arrow"
+							href="#"
+							id="navbarDropdownMenuAvatar"
+							role="button"
+							aria-expanded="false"
+						>
 							<img
-								src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+								src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
 								class="rounded-circle"
-								height="22"
+								height="25"
 								alt="Black and White Portrait of a Man"
 								loading="lazy"
 							/>
-							<strong class="d-none d-sm-block ms-1">John</strong>
-						</a>
-					</li>
-					<li class="nav-item me-3 me-lg-1">
-						<a class="nav-link" href="#">
-							<span><i class="fas fa-plus-circle fa-lg"></i></span>
-						</a>
-					</li>
-					<li class="nav-item dropdown me-3 me-lg-1">
-						<a
-							data-mdb-dropdown-init
-							class="nav-link dropdown-toggle hidden-arrow"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							aria-expanded="false"
-						>
-							<i class="fas fa-comments fa-lg"></i>
-
-							<span class="badge rounded-pill badge-notification bg-danger">6</span>
 						</a>
 						<ul
 							class="dropdown-menu dropdown-menu-end"
-							aria-labelledby="navbarDropdownMenuLink"
+							aria-labelledby="navbarDropdownMenuAvatar"
 						>
 							<li>
-								<a class="dropdown-item" href="#">Some news</a>
+								<a class="dropdown-item" href="#">My profile</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Another news</a>
+								<a class="dropdown-item" href="#">Settings</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Something else here</a>
+								<a class="dropdown-item" href="#">Logout</a>
 							</li>
 						</ul>
-					</li>
-					<li class="nav-item dropdown me-3 me-lg-1">
-						<a
-							data-mdb-dropdown-init
-							class="nav-link dropdown-toggle hidden-arrow"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							aria-expanded="false"
-						>
-							<i class="fas fa-bell fa-lg"></i>
-							<span class="badge rounded-pill badge-notification bg-danger">12</span>
-						</a>
-						<ul
-							class="dropdown-menu dropdown-menu-end"
-							aria-labelledby="navbarDropdownMenuLink"
-						>
-							<li>
-								<a class="dropdown-item" href="#">Some news</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Another news</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown me-3 me-lg-1">
-						<a
-							data-mdb-dropdown-init
-							class="nav-link dropdown-toggle hidden-arrow"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							aria-expanded="false"
-						>
-							<i class="fas fa-chevron-circle-down fa-lg"></i>
-						</a>
-						<ul
-							class="dropdown-menu dropdown-menu-end"
-							aria-labelledby="navbarDropdownMenuLink"
-						>
-							<li>
-								<a class="dropdown-item" href="#">Some news</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Another news</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+					</div>
+				</div>
 				<!-- Right elements -->
 			</div>
+			<!-- Container wrapper -->
 		</nav>
 		<!-- Navbar -->
 	</header>
