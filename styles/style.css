@@ -1,10 +1,11 @@
 .navbar .container-fluid p{
 	margin: 0px 5px;
 	color: white;
+	font-family: 'Poppins', sans-serif;
 }
 
 header .navbar {
-	background-color: green;
+	background-color: #761240;
 }
 
 .nav-link, .fa-shopping-cart, .fa-bell, .fa-moon {
